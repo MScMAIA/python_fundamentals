@@ -1,0 +1,8 @@
+language: python
+python:
+  - "2.7"
+  - "3.6"
+install: source install.sh
+script: pytest -s -v test_compute.py --cov --cov-report=term-missing
+after_success:
+  - codecov
