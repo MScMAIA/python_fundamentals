@@ -36,6 +36,7 @@ We will create some environments which will only contain the package required.
 
 ```
 conda create -n wspy3 python=3
+source activate wspy3
 conda install -y numpy scipy matplotlib pandas cython ipython jupyter pytest pytest-cov
 pip install git+https://github.com/joblib/joblib
 ```
@@ -44,6 +45,7 @@ pip install git+https://github.com/joblib/joblib
 
 ```
 conda create -n wspy2 python=2
+source activate wspy2
 conda install -y numpy scipy matplotlib pandas cython ipython jupyter pytest pytest-cov
 pip install git+https://github.com/joblib/joblib
 ```
